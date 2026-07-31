@@ -1,3 +1,22 @@
+%% Aufgabe 3
+% abgleich
+s = tf('s');
+G= ((4*(s+2))/(s+3));
+figure(20);
+bode(G);
+
+s = tf('s');
+G= ((2*(s+2)^2)/(s*(s+4)));
+figure(21);
+bode(G);
+
+
+s = tf('s');
+G= ((10*(s-2))/((s+1)*(s+3)*(s+8)));
+figure(22);
+bode(G);
+
+
 %% Aufgabe 1
 
 F_1 = tf([4, 8], [1, -3]);
@@ -19,7 +38,30 @@ nyquist(F_3);
 grid on;
 
 %% Aufgabe 3
+%nur zum Abgleichen
+s = tf('s');
+G= (4*(s+2)/(s-3));
+figure(12);
+rlocus(G);
 
+figure(13);
+rlocus(-G);
+
+s = tf('s');
+G= ((2*(s+2)^2)/(s*(s+4)));
+figure(14);
+rlocus(G);
+
+figure(15);
+rlocus(-G);
+
+s = tf('s');
+G= ((10*(s-2))/((s+1)*(s+3)*(s+8)));
+figure(16);
+rlocus(G);
+
+figure(17);
+rlocus(-G);
 
 %% Aufgabe 4
 
