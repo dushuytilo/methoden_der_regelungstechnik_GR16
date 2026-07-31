@@ -18,6 +18,9 @@ figure(3);
 nyquist(F_3);
 grid on;
 
+%% Aufgabe 3
+
+
 %% Aufgabe 4
 
 %F_1=tf([0, 1.2],[1, 0.5]);
